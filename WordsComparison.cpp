@@ -244,6 +244,8 @@ double LevenComparison(const wstring st1, const wstring st2)
 
 double GetComparison(const wstring st1_, const wstring st2_)
 {
+	if (st1_ == L"" && st2_ == L"")
+		return 0;
 	bool RUString1 = true, RUString2 = true;
 	for(int i = 0; i < st1_.size(); i++)
 	{
